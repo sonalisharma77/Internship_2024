@@ -4,7 +4,42 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/IndexPage.vue') }
+      { path: '', component: () => import('pages/IndexPage.vue') },
+
+      {
+        path: '/form',
+        component: () => import('pages/form.vue')
+      },
+      {
+        path: '/login',
+        component: () => import('pages/login.vue')
+      },
+        {
+          path: '/clientkyc',
+          component: () => import('pages/clientkyc.vue')
+        },
+      
+      
+    
+    ]
+  },
+  {
+    path: '/auth',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: 'login', component: () => import('pages/auth/LoginPage.vue') },
+      { path: 'signup', component: () => import('pages/auth/SignupPage.vue') },
+    ]
+  },
+  {
+    path: '/loan',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: 'apply', component: () => import('pages/loan/ApplyPage.vue') },
+      { path: 'basic-detail', component: () => import('pages/auth/BasicDetailPage.vue') },
+      { path: 'kyc', component: () => import('pages/auth/KycPage.vue') },
+      { path: 'bank-verification', component: () => import('pages/auth/BankVerificationPage.vue') },
+      { path: 'finish', component: () => import('pages/auth/FinishPage.vue') },
     ]
   },
 
