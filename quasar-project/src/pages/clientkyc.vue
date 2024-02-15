@@ -30,7 +30,7 @@
     <label for="account type">Account  Type</label>
     <q-radio v-model="option" val="opt1" label="saving" />
 <q-radio v-model="option" val="opt2" label="current " />
-     
+<q-btn color="blue-5" size="md" class="full-width" label="Submit" />
       </q-form>
     
     </q-card>

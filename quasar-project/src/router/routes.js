@@ -36,10 +36,10 @@ const routes = [
     component: () => import('layouts/MainLayout.vue'),
     children: [
       { path: 'apply', component: () => import('pages/loan/ApplyPage.vue') },
-      { path: 'basic-detail', component: () => import('pages/auth/BasicDetailPage.vue') },
-      { path: 'kyc', component: () => import('pages/auth/KycPage.vue') },
-      { path: 'bank-verification', component: () => import('pages/auth/BankVerificationPage.vue') },
-      { path: 'finish', component: () => import('pages/auth/FinishPage.vue') },
+      { path: 'basic-detail', component: () => import('pages/loan/BasicDetailPage.vue') },
+      { path: 'kyc', component: () => import('pages/loan/KycPage.vue') },
+      { path: 'bank-verification', component: () => import('pages/loan/BankVerificationPage.vue') },
+      { path: 'finish', component: () => import('pages/loan/FinishPage.vue') },
     ]
   },
 
