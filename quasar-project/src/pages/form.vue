@@ -9,32 +9,32 @@
         </div>
   <q-form>
    
-  <q-input label="first_name" v-model="formData.first_name"/>
+  <q-input label="First_name" v-model="formData.first_name"/>
  
-   <q-input label="last_name" v-model="formData.last_name"/>
+   <q-input label="Last_name" v-model="formData.last_name"/>
 
-  <q-input label="email" v-model="formData.email"/>
-  <q-input label="contact number" v-model="formData.contact_number"/>
+  <q-input label="Email" v-model="formData.email"/>
+  <q-input label="Contact number" v-model="formData.contact_number"/>
   <q-input type = "date" label="date_of_birth" v-model="formData.date_of_birth"/>
-  <div class="row q-pa-sm">
+  <div class="row q-pa-lg">
   <div class="col" style="margin-right:20px;">
-  <div>
-    <label for="gender"></label>
+  <label for="gender">Gender</label>
    <q-radio val="male" label="male" />
     <q-radio val="female" label="female" />
     </div>
     </div>
-     </div>
-  
-  <q-input label="address" v-model="formData.address"/>
-  <q-input label="state" v-model="formData.state"/>
-  <q-input label="city" v-model="formData.city"/>
-  <q-input label="aadhar_number" v-model="formData.aadhar_number"/>
-  <q-input label="pan_number" v-model="formData.pan_number"/>
+   
+  <q-input label="Address" v-model="formData.address"/>
+  <q-input label="State" v-model="formData.state"/>
+  <q-input label="City" v-model="formData.city"/>
+  <q-input label="Aadhar_number" v-model="formData.aadhar_number"/>
+  <q-input label="Pan_number" v-model="formData.pan_number"/>
   <q-btn class="q-my-lg" color="primary" type="button" @click="submit" label="Submit" />
- </q-form>
+  
+    <q-btn label="Reset" type="reset" color="primary" flat class="q-ml-sm" />
+  </q-form>
 </q-card>
-</div>
+</div>  
 </div>
 </q-page>
  
@@ -48,7 +48,7 @@ export default{
   },
   methods:{
     submit(){
-      let response = this.$axios.post('http//localhost:8055/items/clients_registration',this.formData)
+      let response = this.$axios.post('http//localhost:8055/items/clients',this.formData)
     }
   }
 }

@@ -26,7 +26,8 @@
         hint="Native file (multiple)"
       />
     </q-card-section>
-    <label for="account type"></label>
+    
+    <label for="account type">Account  Type</label>
     <q-radio v-model="option" val="opt1" label="saving" />
 <q-radio v-model="option" val="opt2" label="current " />
      

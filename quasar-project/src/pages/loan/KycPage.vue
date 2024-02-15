@@ -1,5 +1,5 @@
 <template>
     <div>
-        KYC  Page
+        KYC Page
     </div>
 </template>
