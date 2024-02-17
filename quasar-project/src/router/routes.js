@@ -18,7 +18,10 @@ const routes = [
           path: '/clientkyc',
           component: () => import('pages/clientkyc.vue')
         },
-      
+        {
+          path: '/home',
+          component: () => import('pages/home.vue')
+        },
       
     
     ]
@@ -39,6 +42,7 @@ const routes = [
       { path: 'basic-detail', component: () => import('pages/loan/BasicDetailPage.vue') },
       { path: 'kyc', component: () => import('pages/loan/KycPage.vue') },
       { path: 'bank-verification', component: () => import('pages/loan/BankVerificationPage.vue') },
+      { path: 'emi-calulation', component: () => import('pages/loan/EmiCalculation.vue') },
       { path: 'finish', component: () => import('pages/loan/FinishPage.vue') },
     ]
   },

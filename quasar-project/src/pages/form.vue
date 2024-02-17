@@ -19,17 +19,15 @@
   <div class="row q-pa-lg">
   <div class="col" style="margin-right:20px;">
   <label for="gender">Gender</label>
-   <q-radio val="male" label="male" />
-    <q-radio val="female" label="female" />
+  <q-radio v-model="formData.account_type" val="opt1" label="Male" />
+      <q-radio v-model="formData.account_type" val="opt2" label="Female" />
     </div>
     </div>
    
   <q-input label="Address" v-model="formData.address"/>
   <q-input label="State" v-model="formData.state"/>
   <q-input label="City" v-model="formData.city"/>
-  <q-input label="Aadhar_number" v-model="formData.aadhar_number"/>
-  <q-input label="Pan_number" v-model="formData.pan_number"/>
-  <q-btn class="q-my-lg" color="primary" type="button" @click="submit" label="Submit" />
+ <q-btn class="q-my-lg" color="primary" type="button" @click="submit" label="Submit" />
   
     <q-btn label="Reset" type="reset" color="primary" flat class="q-ml-sm" />
   </q-form>
@@ -48,7 +46,7 @@ export default{
   },
   methods:{
     submit(){
-      let response = this.$axios.post('http//localhost:8055/items/clients',this.formData)
+      let response = this.$axios.post('http//localhost:8055/items/form',this.formData)
     }
   }
 }
