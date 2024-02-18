@@ -29,7 +29,7 @@
   <q-input label="City" v-model="formData.city"/>
  <q-btn class="q-my-lg" color="primary" type="button" @click="submit" label="Submit" />
   
-    <q-btn label="Reset" type="reset" color="primary" flat class="q-ml-sm" />
+  <q-btn label="Reset" type="reset" color="primary" flat class="q-ml-sm" />
   </q-form>
 </q-card>
 </div>  
